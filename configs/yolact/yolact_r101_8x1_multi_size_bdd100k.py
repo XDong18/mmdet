@@ -127,8 +127,8 @@ test_pipeline = [
         ])
 ]
 data = dict(
-    samples_per_gpu=2,
-    workers_per_gpu=1,
+    samples_per_gpu=1,
+    workers_per_gpu=0.5,
     train=dict(
         type=dataset_type,
         ann_file='/shared/xudongliu/bdd100k/labels/ins_seg/ins_seg_train.json',
